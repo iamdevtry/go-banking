@@ -18,6 +18,11 @@ migratedown:
 
 migratedown1:
 	migrate -path db/migration -database "postgresql://root:123456@localhost:5432/go_bank?sslmode=disable" -verbose down 1
+
 sqlc:
 	sqlc generate
+
+test:
+	go test -v -cover ./...
+
 .PHONY: createdb dropdb migrateup migrateup1 migratedown migratedown1 sqlc
