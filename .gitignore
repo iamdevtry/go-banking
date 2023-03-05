@@ -15,7 +15,7 @@
 # vendor/
 
 # Environment variables
-*.env
+app.env
 
 #Ignore .DS_Store files
 **/.DS_Store
